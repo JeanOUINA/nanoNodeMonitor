@@ -43,10 +43,12 @@
           <span class="float-left-truncate">Node Uptime</span>
           <span class="float-right-truncate">{{formatSeconds nodeUptimeStartup}}</span>
         </li>
+        {{#if nodeUptime}} <!--If uptime robot api key is set-->
         <li class="list-group-item">
           <span class="float-left-truncate">Node Uptime %</span>
           <span class="float-right-truncate">{{nodeUptime}} %</span>
         </li>
+        {{/if}}
         <li class="list-group-item">
           <span class="float-left-truncate">Peers</span>
           <span class="float-right-truncate">{{formatNumber numPeers}}</span>
