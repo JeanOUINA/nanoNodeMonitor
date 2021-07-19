@@ -57,3 +57,7 @@
     list-style: none;
     padding-right: 10px;
 }
+
+.list-group-item {
+    border: none!important;
+}
